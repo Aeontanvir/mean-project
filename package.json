@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startFrontend": "cd projectcosting-fe && ng serve",
+    "startApi": "cd projectcosting-api && npm start",
+    "start": "npm run startApi | npm run startFrontend",
+    "installFrontend": "cd projectcosting-fe && npm install",
+    "installApi": "cd projectcosting-api && npm install",
+    "install": "npm run installApi | npm run installFrontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
