@@ -1,0 +1,60 @@
+<div style="clear: both; overflow: hidden;">
+  <div class="block float-left">
+    <div class="inner bg-green">
+      <div class="title">First Project Budget</div>
+      <div class="container">
+        <div class="left float-left">
+          <img
+            src="assets/images/theme/icon/gross.png">
+        </div>
+        <div class="right float-right">
+          <h1>{{lastProject && lastProject.budget | currency}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block float-left">
+    <div class="inner bg-red">
+      <div class="title">First Cost</div>
+      <div class="container">
+        <div class="left float-left">
+          <img
+            src="assets/images/theme/icon/budget.png">
+        </div>
+        <div class="right float-right">
+          <h1>{{lastCost && lastCost.amount | currency}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block float-left">
+    <div class="inner bg-blue">
+      <div class="title">Total Projects Count</div>
+      <div class="container">
+        <div class="left float-left">
+          <img
+            src="assets/images/theme/icon/sigma.png">
+        </div>
+        <div class="right float-right">
+          <h1>{{projectCount}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block float-left">
+    <div class="inner bg-brown">
+      <div class="title">Total Costs Count</div>
+      <div class="container">
+        <div class="left float-left">
+          <img
+            src="assets/images/theme/icon/countdown.png">
+        </div>
+        <div class="right float-right">
+          <h1>{{costCount}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

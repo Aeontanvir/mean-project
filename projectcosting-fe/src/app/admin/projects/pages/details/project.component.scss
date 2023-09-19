@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-left {
+  flex: 30%;
+}
+
+.item-right {
+  flex: 70%;
+}
+
+.details{
+  padding-right: 20px;
+}
+
+
+
+.top-action div {
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.top-action .title span {
+  font-size: 18px;
+  display: block;
+  padding: 10px 5px;
+}
+
+.top-action .action {
+  text-align: right;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.description{
+  display: block;
+  overflow: hidden;
+  background-color: #e7e7e7;
+  padding: 5px;
+}

@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.table-modal-noborder {
+  width: 100%;
+}
+
+.table-modal-noborder td {
+  border: 0px solid #ccc !important;
+  padding: 0;
+  margin: 0;
+}
+
+
+.text-right{
+  text-align: right;
+}
+
+.p-title{
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.p-bold{
+  font-weight: bold;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.clear-fix{
+  overflow: hidden;
+  clear: both;
+}
+
+.text-green{
+  color: green;
+}
+.text-red{
+  color: red;
+}

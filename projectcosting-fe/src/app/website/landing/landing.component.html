@@ -1,0 +1,47 @@
+<div class="landing-page">
+  <div class="container">
+    <div class="header-area">
+      <div class="logo">Project <b>Costing</b></div>
+      <ul class="links">
+        <li><a [routerLink]="[ '/public',  ]">Home</a></li>
+        <li *ngIf="!isLoggedIn"><a
+            [routerLink]="[ '/auth/registration',  ]">Signup</a></li>
+        <li *ngIf="!isLoggedIn"><a [routerLink]="[ '/auth/login',  ]">Login</a>
+        </li>
+        <li *ngIf="isLoggedIn"><a
+            [routerLink]="[ '/admin',  ]">{{currentUser?.name}}</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="info float-left">
+        <h1>Looking For Project Costing tools?</h1>
+        <p>
+          Project costing app is a software application designed to help project
+          managers and stakeholders estimate, track, and control project costs.
+          It
+          provides a user-friendly interface and essential features to manage
+          the
+          financial aspects of a project. Here's a description of a basic
+          project
+          costing
+          app. The app allows users to create detailed cost estimates by
+          entering costs for labor, materials, equipment, and other project
+          expenses. It
+          may provide pre-built templates or customizable fields to input cost
+          data. Users
+          can specify quantities, unit costs, and markups to calculate accurate
+          cost
+          estimates for individual tasks or the entire project.
+        </p>
+        <button [routerLink]="[ '/auth/registration',  ]">Improve your project
+          costs</button>
+      </div>
+      <div class="image float-right">
+        <img src="https://i.postimg.cc/65QxYYzh/001234.png">
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+</div>
+

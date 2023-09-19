@@ -1,0 +1,48 @@
+<div mat-dialog-title>
+  <span *ngIf="!isUpdate">Create Project</span>
+  <span *ngIf="isUpdate">Update Project</span>
+</div>
+<form #createForm="ngForm"
+  (ngSubmit)="onSubmit()">
+  <mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Title *</mat-label>
+      <input type="text"
+        matInput
+        required
+        name="title"
+        [(ngModel)]="project.title">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description </mat-label>
+      <textarea matInput
+        name="description"
+        [(ngModel)]="project.description"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Budget *</mat-label>
+      <input type="number"
+        matInput
+        required
+        name="budget"
+        [(ngModel)]="project.budget">
+    </mat-form-field>
+
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <table class="table-modal-noborder">
+      <tr>
+        <td>
+          <button mat-button
+            mat-dialog-close>Close</button>
+        </td>
+        <td class="text-right">
+          <button mat-button type="submit"
+            *ngIf="!isUpdate">Create</button>
+          <button mat-button type="submit"
+            *ngIf="isUpdate">Update</button>
+        </td>
+      </tr>
+    </table>
+  </mat-dialog-actions>
+</form>

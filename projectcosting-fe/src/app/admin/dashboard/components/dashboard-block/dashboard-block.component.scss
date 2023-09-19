@@ -1,0 +1,60 @@
+.block{
+  width: 25%;
+  overflow: hidden;
+}
+.block .inner{
+  border-radius: 10px;
+  height: 160px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.block .title{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px ;
+  background: rgb(34, 35, 34, .3);
+}
+
+.container{
+  overflow: hidden;
+}
+
+.container .left{
+  width: 40%;
+  overflow: hidden;
+}
+.container img{
+  width: 90px;
+  height: auto;
+  margin: 10px;
+}
+.container .right{
+  width: 60%;
+  overflow: hidden;
+}
+.container .right h1{
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  margin: 45px 20px;
+}
+.container img{
+  height: auto;
+}
+
+.bg-green{
+  background: #8cb56b;
+}
+.bg-red{
+  background: #f2826f;
+}
+.bg-blue{
+  background: #81c6eb;
+}
+.bg-brown{
+  background: #efa369;
+}
+

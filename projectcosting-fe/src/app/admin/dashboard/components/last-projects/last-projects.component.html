@@ -1,0 +1,66 @@
+<div>
+  <div style="width: 65%; float: left;">
+
+    <div class="title">
+      <span>Top 7 Projects</span>
+    </div>
+
+    <table mat-table
+      [dataSource]="projects"
+      class="mat-elevation-z8">
+
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="title">
+        <th mat-header-cell
+          *matHeaderCellDef> Title </th>
+        <td mat-cell
+          *matCellDef="let element"> {{element.title}} </td>
+      </ng-container>
+      <ng-container matColumnDef="budget">
+        <th mat-header-cell
+          *matHeaderCellDef> Budget </th>
+        <td mat-cell
+          *matCellDef="let element"> {{element.budget | currency}} </td>
+      </ng-container>
+      <ng-container matColumnDef="createdAt">
+        <th mat-header-cell
+          *matHeaderCellDef> Created </th>
+        <td mat-cell
+          *matCellDef="let element"> {{element.createdAt | date: 'medium'}}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="updatedAt">
+        <th mat-header-cell
+          *matHeaderCellDef> Updated </th>
+        <td mat-cell
+          *matCellDef="let element"> {{element.updatedAt| date: 'medium'}} </td>
+      </ng-container>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell
+          *matHeaderCellDef> Action </th>
+        <td mat-cell
+          *matCellDef="let element">
+          <button mat-raised-button
+            color="primary"
+            (click)="onDetailsclick(element._id)">Costs</button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row
+        *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row
+        *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+  </div>
+  <div style="width: 35%; height: auto; float: right;">
+    <div class="chart">
+      <app-pie-chart *ngIf="costs.length"
+        [costs]="costs"></app-pie-chart>
+    </div>
+
+
+  </div>
+</div>

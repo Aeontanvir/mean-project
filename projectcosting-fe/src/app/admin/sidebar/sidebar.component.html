@@ -1,0 +1,39 @@
+<div class="mainnav">
+  <div class="avatar-box">
+    <img class="avatar"
+      src="assets/images/theme/user.png">
+    <div>{{currentUser?.name}}</div>
+    <div>{{currentUser?.email}}</div>
+  </div>
+
+  <div class="menu">
+    <div class="menu-head">
+      <span>Menu</span>
+    </div>
+    <div class="menu-item">
+      <button mat-button class="menu-button" [routerLink]="['dashboard']">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+      </button>
+    </div>
+    <div class="menu-item">
+      <button mat-button class="menu-button" [routerLink]="['projects']">
+        <mat-icon>dynamic_feed</mat-icon>
+        <span>Projects</span>
+      </button>
+    </div>
+    <div class="menu-item">
+      <button mat-button class="menu-button" [routerLink]="['settings']">
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </button>
+    </div>
+    <div class="menu-item">
+      <button mat-button class="menu-button" (click)="onLogoutClick()">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </div>
+  </div>
+
+</div>
